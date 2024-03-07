@@ -1,0 +1,58 @@
+:root {
+  font-size: 16px;
+  width: 100vw;
+  height: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: #eee;
+  cursor: default;
+  font-family: monospace;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  touch-action: none;
+  overflow: hidden;
+  overscroll-behavior: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -webkit-overflow-scrolling: auto;
+}
+
+body, #app {
+  width: 100vw;
+  height: 100%;
+}
+
+canvas {
+  cursor: grab;
+  vertical-align: middle;
+}
+
+#info {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  text-align: right;
+}
+
+#loading, #support {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#loading.hidden, #support.hidden {
+  display: none;
+}
